@@ -1,4 +1,4 @@
-# Lab 2: ¨Tomáš Svěcený
+# Lab 2: Tomáš Svěcený
 
 ### 2-bit comparator
 

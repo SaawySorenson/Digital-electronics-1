@@ -1,0 +1,10 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: D:/Documents/xsvece00/Digital-electronics-1/labs/05-ffs/ffs/t_ff_rst/t_ff_rst.srcs/sim_1/new/tb_t_ff_rst.vhd
+Error: reset 0, data 0 failed
+Time: 13 ns  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: D:/Documents/xsvece00/Digital-electronics-1/labs/05-ffs/ffs/t_ff_rst/t_ff_rst.srcs/sim_1/new/tb_t_ff_rst.vhd
+Error: reset 1, data 0 failed
+Time: 132 ns  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: D:/Documents/xsvece00/Digital-electronics-1/labs/05-ffs/ffs/t_ff_rst/t_ff_rst.srcs/sim_1/new/tb_t_ff_rst.vhd
+Note: Stimulus process finished
+Time: 158 ns  Iteration: 0  Process: /tb_ff_rst/p_stimulus  File: D:/Documents/xsvece00/Digital-electronics-1/labs/05-ffs/ffs/t_ff_rst/t_ff_rst.srcs/sim_1/new/tb_t_ff_rst.vhd

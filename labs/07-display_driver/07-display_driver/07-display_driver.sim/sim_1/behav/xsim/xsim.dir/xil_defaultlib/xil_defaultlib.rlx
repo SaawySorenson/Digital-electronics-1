@@ -1,0 +1,9 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/Documents/xsvece00/Digital-electronics-1/labs/07-display_driver/07-display_driver/07-display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd,1648635839,vhdl,,,,tb_driver_7seg_4digits,,,,,,,,
+D:/Documents/xsvece00/Digital-electronics-1/labs/07-display_driver/07-display_driver/07-display_driver.srcs/sources_1/new/clock_enable.vhd,1648033811,vhdl,D:/Documents/xsvece00/Digital-electronics-1/labs/07-display_driver/07-display_driver/07-display_driver.srcs/sources_1/new/driver_7seg_4digits.vhd,,,clock_enable,,,,,,,,
+D:/Documents/xsvece00/Digital-electronics-1/labs/07-display_driver/07-display_driver/07-display_driver.srcs/sources_1/new/cnt_up_down.vhd,1648031660,vhdl,D:/Documents/xsvece00/Digital-electronics-1/labs/07-display_driver/07-display_driver/07-display_driver.srcs/sources_1/new/driver_7seg_4digits.vhd,,,cnt_up_down,,,,,,,,
+D:/Documents/xsvece00/Digital-electronics-1/labs/07-display_driver/07-display_driver/07-display_driver.srcs/sources_1/new/driver_7seg_4digits.vhd,1648634169,vhdl,D:/Documents/xsvece00/Digital-electronics-1/labs/07-display_driver/07-display_driver/07-display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd,,,driver_7seg_4digits,,,,,,,,
+D:/Documents/xsvece00/Digital-electronics-1/labs/07-display_driver/07-display_driver/07-display_driver.srcs/sources_1/new/hex_7seg.vhd,1646824109,vhdl,D:/Documents/xsvece00/Digital-electronics-1/labs/07-display_driver/07-display_driver/07-display_driver.srcs/sources_1/new/driver_7seg_4digits.vhd,,,hex_7seg,,,,,,,,

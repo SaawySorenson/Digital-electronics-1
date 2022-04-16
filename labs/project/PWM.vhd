@@ -58,9 +58,49 @@ architecture Behavioral of sound_gen is
                 
 
             elsif (s_en = '1') then
+                if(snd1_i = '1') then
+                    s_snd <= c_ZERO;
+                    wait for 2 ns;
+                    s_snd <= c_ONE;
+                    wait for 46 ns;
+                    s_snd <= c_ZERO;
+                    wait for 2 ns;
+                    
+                elsif(snd2_i = '1') then    
+                    s_snd <= c_ZERO;
+                    wait for 4 ns;
+                    s_snd <= c_ONE;
+                    wait for 42 ns;
+                    s_snd <= c_ZERO;
+                    wait for 4 ns;
                
-               
+                elsif(snd3_i = '1') then
+                    s_snd <= c_ZERO;
+                    wait for 6 ns;
+                    s_snd <= c_ONE;
+                    wait for 38 ns;
+                    s_snd <= c_ZERO;
+                    wait for 6 ns;
+                   
+                elsif(snd4_i = '1') then
+                    s_snd <= c_ZERO;
+                    wait for 8 ns;
+                    s_snd <= c_ONE;
+                    wait for 34 ns;
+                    s_snd <= c_ZERO;
+                    wait for 8 ns; 
+                       
+                elsif(snd5_i = '1') then
+                     s_snd <= c_ZERO;
+                    wait for 10 ns;
+                    s_snd <= c_ONE;
+                    wait for 30 ns;
+                    s_snd <= c_ZERO;
+                    wait for 10 ns;
                 
+                else
+                    s_snd <= c_ZERO;
+                end if; --Sound type    
             end if; -- Synchronous reset
         end if; -- Rising edge
     end process p_sound_gen;

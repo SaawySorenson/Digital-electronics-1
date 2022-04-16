@@ -58,48 +58,13 @@ architecture Behavioral of sound_gen is
                 
 
             elsif (s_en = '1') then
-                -- Every 250 ms, CASE checks the value of the s_state 
-                -- variable and changes to the next state according 
-                -- to the delay value.
+               
                
                 
             end if; -- Synchronous reset
         end if; -- Rising edge
     end process p_sound_gen;
 
-    --------------------------------------------------------
-    -- p_output_fsm:
-    -- The combinatorial process is sensitive to state
-    -- changes and sets the output signals accordingly.
-    -- This is an example of a Moore state machine and
-    -- therefore the output is set based on the active state.
-    --------------------------------------------------------
-    p_output_fsm : process(s_state)
-    begin
-        case s_state is
-            when STOP1 =>
-                south_o <= c_RED;
-                west_o  <= c_RED;
-            when WEST_GO =>
-                south_o <= c_RED;
-                west_o  <= c_GREEN;
-            when WEST_WAIT =>
-                south_o <= c_RED;
-                west_o  <= c_YELLOW;
-            when STOP2 =>
-                south_o <= c_RED;
-                west_o  <= c_RED;
-            when SOUTH_GO =>
-                south_o <= c_GREEN;
-                west_o  <= c_RED;
-            when SOUTH_WAIT =>
-                south_o <= c_YELLOW;
-                west_o  <= c_RED;    
-
-            when others =>
-                south_o <= c_RED;
-                west_o  <= c_RED;
-        end case;
-    end process p_output_fsm;
+   
 
 end architecture Behavioral;

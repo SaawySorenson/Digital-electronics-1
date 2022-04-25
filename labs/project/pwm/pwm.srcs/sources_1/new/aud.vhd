@@ -69,7 +69,7 @@ begin
         if(s_en = '1') then    
                 if(duty_cnt >= duty_cycle ) then
                     sound_o <= '0';
-                        if(duty_cnt >= 2*duty_cycle ) then
+                        if(duty_cnt >= 100) then
                             duty_cnt <= 0;
                         else
                             duty_cnt  <= duty_cnt  + 1;
@@ -79,7 +79,70 @@ begin
                     duty_cnt <= duty_cnt + 1;          
                 end if;
         
+        elsif(snd2_i  = '1') then
+            duty_cycle <= 75;
+        end if;
+        if(s_en = '1') then    
+                if(duty_cnt >= duty_cycle ) then
+                    sound_o <= '0';
+                        if(duty_cnt >= 100) then
+                            duty_cnt <= 0;
+                        else
+                            duty_cnt  <= duty_cnt  + 1;
+                        end if;
+                else
+                    sound_o <= '1';      
+                    duty_cnt <= duty_cnt + 1;          
+                end if;
+                    
+        elsif(snd3_i  = '1') then
+            duty_cycle <= 25;
+        end if;
+        if(s_en = '1') then    
+                if(duty_cnt >= duty_cycle ) then
+                    sound_o <= '0';
+                        if(duty_cnt >= 100) then
+                            duty_cnt <= 0;
+                        else
+                            duty_cnt  <= duty_cnt  + 1;
+                        end if;
+                else
+                    sound_o <= '1';      
+                    duty_cnt <= duty_cnt + 1;          
+                end if;
+                    
+        elsif(snd4_i  = '1') then
+            duty_cycle <= 10;
+        end if;
+        if(s_en = '1') then    
+                if(duty_cnt >= duty_cycle ) then
+                    sound_o <= '0';
+                        if(duty_cnt >= 100) then
+                            duty_cnt <= 0;
+                        else
+                            duty_cnt  <= duty_cnt  + 1;
+                        end if;
+                else
+                    sound_o <= '1';      
+                    duty_cnt <= duty_cnt + 1;          
+                end if;            
         
+        elsif(snd5_i  = '1') then
+            duty_cycle <= 90;
+        end if;
+        if(s_en = '1') then    
+                if(duty_cnt >= duty_cycle ) then
+                    sound_o <= '0';
+                        if(duty_cnt >= 100) then
+                            duty_cnt <= 0;
+                        else
+                            duty_cnt  <= duty_cnt  + 1;
+                        end if;
+                else
+                    sound_o <= '1';      
+                    duty_cnt <= duty_cnt + 1;          
+                end if;            
+                    
         end if;
     
     

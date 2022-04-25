@@ -44,6 +44,17 @@ end top;
 architecture Behavioral of top is
 
 begin
-
+    
+    tlc : entity work.tlc
+        port map(
+            clk   => CLK100MHZ,
+            snd1_i => BTNA,
+            snd2_i => BTNB,
+            snd3_i => BTNC,
+            snd4_i => BTND,
+            snd5_i => BTNE,
+            sound_o => AUD_PWM
+               
+        );
 
 end Behavioral;

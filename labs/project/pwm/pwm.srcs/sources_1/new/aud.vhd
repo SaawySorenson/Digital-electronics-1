@@ -14,11 +14,11 @@ entity sound_gen is
         reset   : in  std_logic;
               
         sound_o : out std_logic;
-        snd1_i  : int std_logic;
-        snd2_i  : int std_logic;
-        snd3_i  : int std_logic;
-        snd4_i  : int std_logic;
-        snd5_i  : int std_logic
+        snd1_i  : in std_logic;
+        snd2_i  : in std_logic;
+        snd3_i  : in std_logic;
+        snd4_i  : in std_logic;
+        snd5_i  : in std_logic
     );
 end entity sound_gen;
 

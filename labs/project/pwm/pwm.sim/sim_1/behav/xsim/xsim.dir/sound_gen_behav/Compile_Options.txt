@@ -1,0 +1,1 @@
+-wto "e28290bd8e1d41c8a8385067eee00e2b" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "sound_gen_behav" "xil_defaultlib.sound_gen" -log "elaborate.log" 

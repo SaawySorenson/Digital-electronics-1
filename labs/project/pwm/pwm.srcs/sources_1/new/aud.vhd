@@ -13,6 +13,7 @@ entity sound_gen is
         clk     : in  std_logic;
         reset   : in  std_logic;
               
+        sounde_o : out std_logic;      
         sound_o : out std_logic;
         snd1_i  : in std_logic;
         snd2_i  : in std_logic;
@@ -48,7 +49,7 @@ architecture Behavioral of sound_gen is
         
     clk_en0 : entity work.clock_enable
         generic map(
-            g_MAX => 100000 
+            g_MAX => 800 
         )
         port map(
             clk   => clk,
@@ -62,10 +63,13 @@ begin
   if rising_edge(clk) then
     if reset  = '1' then 
      sound_o <= '0';
+     sounde_o <= '0';    
     end if;
+    
         if(snd1_i  = '1') then
+            sounde_o <= '1';
             duty_cycle <= 50;
-        end if;
+        
         if(s_en = '1') then    
                 if(duty_cnt >= duty_cycle ) then
                     sound_o <= '0';
@@ -78,58 +82,45 @@ begin
                     sound_o <= '1';      
                     duty_cnt <= duty_cnt + 1;          
                 end if;
-        
+        end if;
         elsif(snd2_i  = '1') then
+            sounde_o <= '1';
             duty_cycle <= 75;
-        end if;
-        if(s_en = '1') then    
-                if(duty_cnt >= duty_cycle ) then
-                    sound_o <= '0';
-                        if(duty_cnt >= 100) then
-                            duty_cnt <= 0;
-                        else
-                            duty_cnt  <= duty_cnt  + 1;
-                        end if;
-                else
-                    sound_o <= '1';      
-                    duty_cnt <= duty_cnt + 1;          
-                end if;
-                    
-        elsif(snd3_i  = '1') then
-            duty_cycle <= 25;
-        end if;
-        if(s_en = '1') then    
-                if(duty_cnt >= duty_cycle ) then
-                    sound_o <= '0';
-                        if(duty_cnt >= 100) then
-                            duty_cnt <= 0;
-                        else
-                            duty_cnt  <= duty_cnt  + 1;
-                        end if;
-                else
-                    sound_o <= '1';      
-                    duty_cnt <= duty_cnt + 1;          
-                end if;
-                    
-        elsif(snd4_i  = '1') then
-            duty_cycle <= 10;
-        end if;
-        if(s_en = '1') then    
-                if(duty_cnt >= duty_cycle ) then
-                    sound_o <= '0';
-                        if(duty_cnt >= 100) then
-                            duty_cnt <= 0;
-                        else
-                            duty_cnt  <= duty_cnt  + 1;
-                        end if;
-                else
-                    sound_o <= '1';      
-                    duty_cnt <= duty_cnt + 1;          
-                end if;            
         
-        elsif(snd5_i  = '1') then
-            duty_cycle <= 90;
-        end if;
+        if(s_en = '1') then    
+                if(duty_cnt >= duty_cycle ) then
+                    sound_o <= '0';
+                        if(duty_cnt >= 100) then
+                            duty_cnt <= 0;
+                        else
+                            duty_cnt  <= duty_cnt  + 1;
+                        end if;
+                else
+                    sound_o <= '1';      
+                    duty_cnt <= duty_cnt + 1;          
+                end if;
+              end if;      
+        elsif(snd3_i  = '1') then
+            sounde_o <= '1';
+            duty_cycle <= 25;
+        
+        if(s_en = '1') then    
+                if(duty_cnt >= duty_cycle ) then
+                    sound_o <= '0';
+                        if(duty_cnt >= 100) then
+                            duty_cnt <= 0;
+                        else
+                            duty_cnt  <= duty_cnt  + 1;
+                        end if;
+                else
+                    sound_o <= '1';      
+                    duty_cnt <= duty_cnt + 1;          
+                end if;
+              end if;      
+        elsif(snd4_i  = '1') then
+            sounde_o <= '1';
+            duty_cycle <= 10;
+        
         if(s_en = '1') then    
                 if(duty_cnt >= duty_cycle ) then
                     sound_o <= '0';
@@ -142,16 +133,27 @@ begin
                     sound_o <= '1';      
                     duty_cnt <= duty_cnt + 1;          
                 end if;            
-                    
         end if;
-    
-    
-    
-    
-    
-    
-    
+        elsif(snd5_i  = '1') then
+            sounde_o <= '1';
+            duty_cycle <= 90;
+        
+        if(s_en = '1') then    
+                if(duty_cnt >= duty_cycle ) then
+                    sound_o <= '0';
+                        if(duty_cnt >= 100) then
+                            duty_cnt <= 0;
+                        else
+                            duty_cnt  <= duty_cnt  + 1;
+                        end if;
+                else
+                    sound_o <= '1';      
+                    duty_cnt <= duty_cnt + 1;          
+                end if;            
+              end if;        
+        end if;
     end if;
+   
 end process;
 
    

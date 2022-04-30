@@ -60,12 +60,15 @@ Přepínač je použit pouze jeden pro funci reset, tedy port SW[0] logického v
 aud<br>
 <br>
 ![scheme](images/aud_block.png)
+<br>
 clock_enable<br>
 <br>
 ![scheme](images/clock_block.png)
+<br>
 top<br>
 <br>
 ![scheme](images/top_block.png)
+<br>
 
 <a name="top"></a>
 ## TOP module description and simulations

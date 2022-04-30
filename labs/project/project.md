@@ -57,8 +57,15 @@ Přepínač je použit pouze jeden pro funci reset, tedy port SW[0] logického v
 <a name="modules"></a>
 ## VHDL modules description and simulations
 
-Write your text here.
-
+aud<br>
+<br>
+![scheme](images/aud_block.png)
+clock_enable<br>
+<br>
+![scheme](images/clock_block.png)
+top<br>
+<br>
+![scheme](images/top_block.png)
 
 <a name="top"></a>
 ## TOP module description and simulations

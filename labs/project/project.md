@@ -40,6 +40,7 @@ Mono audio output<br>
 Audio Jack na desce Nexys A7 je připojen k filtru dolní propusti, který je ovládán portem AUD_PWM s pulzně šířkovou modulací a portem AUD_SD, 
 který je třeba napájet logickou 1 (high) pro aktivaci funkce filtru.
 
+![pwm](images/pwm.png)
 
 
 

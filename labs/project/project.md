@@ -26,7 +26,7 @@ Link to your GitHub project folder:
 Jako cíl projektu jsme se rozhodli pro napodobení "zvukové klávesnice" tzn. generování různých zvukových výstupů dle stisknuté klávesy.
 
 Cíle:
--zkušební verze kódu
+-zkušební verze kódu <br>
 -kompilace kódu
 -otestování slyšitelné frekvence výstupu
 -konečná verze kódu

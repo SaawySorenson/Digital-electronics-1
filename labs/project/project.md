@@ -1,14 +1,14 @@
-# YOUR_PROJECT_TITLE
+# Pwm modulace zvukového výstupu
 
 ### Team members
 
-* Member 1 (responsible for xxx)
-* Member 2 (responsible for xxx)
-* Member 3 (responsible for xxx)
+* Tomáš Svěcený - Kód projektu, testování s hardwarem, extra hardware, dokumentace, video prezentace
+* Michal Vida - Dokumentace, testování
+* Jan Ruibar - mimo první hodinu projektu zcela nepřítomen, pokusi o online kontakt neúspěšné, nepodílel se na projektu
 
 Link to your GitHub project folder:
 
-   [https://github.com/...](https://github.com/...)
+   [https://github.com/SaawySorenson/Digital-electronics-1/tree/main/labs/project](https://github.com/SaawySorenson/Digital-electronics-1/tree/main/labs/project)
 
 
 ### Table of contents
@@ -23,7 +23,14 @@ Link to your GitHub project folder:
 <a name="objectives"></a>
 ## Project objectives
 
-Write your text here.
+Jako cíl projektu jsme se rozhodli pro napodobení "zvukové klávesnice" tzn. generování různých zvukových výstupů dle stisknuté klávesy.
+
+Cíle:
+-zkušební verze kódu
+-kompilace kódu
+-otestování slyšitelné frekvence výstupu
+-konečná verze kódu
+-prezentace funkce
 
 
 <a name="hardware"></a>

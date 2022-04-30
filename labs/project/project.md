@@ -65,15 +65,14 @@ clock_enable<br>
 <br>
 ![scheme](images/clock_block.png)
 <br>
-top<br>
-<br>
-![scheme](images/top_block.png)
-<br>
 
 <a name="top"></a>
 ## TOP module description and simulations
 
-Write your text here.
+top<br>
+<br>
+![scheme](images/top_block.png)
+<br>
 
 
 <a name="video"></a>
@@ -84,5 +83,6 @@ Write your text here
 
 <a name="references"></a>
 ## References
+<br>
+[https://digilent.com/reference/programmable-logic/nexys-a7/reference-manual?redirect=1](https://digilent.com/reference/programmable-logic/nexys-a7/reference-manual?redirect=1)
 
-1. Write your text here.

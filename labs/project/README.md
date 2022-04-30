@@ -61,10 +61,19 @@ aud<br>
 <br>
 ![scheme](images/aud_block.png)
 <br>
+Aud modul je zodpovědný za generování binárních hodnot s požadovanou střídou periody signálu a jejich přenosu na zvukový výstup.<br>
+Dochází k zvolení různé střídy dle stisknutého tlačítka a následná generace vhodného počtu vzorků, např. duty = 70: 70 vzorků v 1, 30 vzorků v 0.<br>
+Po napočítání 100 prvků se počitadlo anuluje a dochází k opakovanému načtení střídy a generaci periody.<br>
+Modul také přijímá synchroní reset pro vypnutí výstupu<br>
+<br>
 clock_enable<br>
 <br>
 ![scheme](images/clock_block.png)
 <br>
+Modul clock enable slouží k nastevení frekvence vzorků pomocí vnitřní proměnné g_MAX, která je dělitelem frekvence CLOCK čipu, <br>
+výsledná frekvence zvuku na výstupu je tedy CLOCK/100.g_MAX (100 vzorků za periodu, CLOCK = 100MZH, g_MAX = 800)  =1250Hz  <br>
+<br>
+
 
 <a name="top"></a>
 ## TOP module description and simulations

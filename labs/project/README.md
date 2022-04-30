@@ -83,7 +83,7 @@ top<br>
 ![scheme](images/top_block.png)
 <br>
 Top je vrchní schránkou pro ostatní moduly, definuje připojení jednotlivých vstupů na piny desky všechna funkcionalita projektu spadá pod něj<br>
-je teddy důležité při generaci Bitstreamu zvolit právě top modul<br>
+je tedy důležité při generaci Bitstreamu zvolit právě top modul<br>
 
 
 

@@ -2,8 +2,8 @@
 
 ### Team members
 
-* Tomáš Svěcený - Kód projektu, testování s hardwarem, extra hardware, dokumentace, video prezentace
-* Michal Vida - Dokumentace, testování
+* Tomáš Svěcený - Všechna zpracovaná témata
+* Michal Vida - zprva kooperativní, později bohužel nepřítomen a bez reakcí, nepodílel se na projektu
 * Jan Ruibar - mimo první hodinu projektu zcela nepřítomen, pokusi o online kontakt neúspěšné, nepodílel se na projektu
 
 Link to your GitHub project folder:

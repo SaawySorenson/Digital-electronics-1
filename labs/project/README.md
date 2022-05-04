@@ -2,7 +2,7 @@
 
 ### Team members
 
-* Tomáš Svěcený - Všechna zpracovaná témata
+* Tomáš Svěcený - Všechna zpracované části projektu
 * Michal Vida - zprva kooperativní, později bohužel nepřítomen a bez reakcí, nepodílel se na projektu
 * Jan Ruibar - mimo první hodinu projektu zcela nepřítomen, pokusi o online kontakt neúspěšné, nepodílel se na projektu
 
